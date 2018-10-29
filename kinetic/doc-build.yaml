@@ -1,7 +1,7 @@
 %YAML 1.1
 # ROS buildfarm doc-build file
 ---
-canonical_base_url: http://54.183.65.232/docs
+canonical_base_url: http://ivfarm-repo.3me.tudelft.nl:80
 documentation_type: rosdoc_lite
 jenkins_job_priority: 89
 jenkins_job_timeout: 120
@@ -65,7 +65,7 @@ repositories:
     =hucd
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
+  - http://repositories.ros.org/ubuntu/main
 targets:
   ubuntu:
     xenial:
@@ -74,6 +74,5 @@ type: doc-build
 upload_credential_id: 842a4e10-95b9-4761-a2f6-44a13e21434e
 upload_host: repo
 upload_root: /var/repos/docs
-# The `upload_user` defaults from source and can be tuned as needed.
-# upload_user: jenkins-agent
+upload_user: jenkins-agent
 version: 2
