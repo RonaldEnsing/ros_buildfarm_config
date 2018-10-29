@@ -5,8 +5,10 @@ documentation_type: released_manifest
 jenkins_job_priority: 89
 jenkins_job_timeout: 30
 notifications:
+  committers: false
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - r.m.ensing@tudelft.nl
+  maintainers: false
 targets:
   ubuntu:
     xenial:

@@ -3,17 +3,20 @@
 ---
 distributions:
   kinetic:
-    doc_builds: {}
+    doc_builds:
+      default: kinetic/doc-build.yaml
     notification_emails:
     - r.m.ensing@tudelft.nl
     release_builds: {}
+        #      default: kinetic/release-build.yaml
     source_builds: {}
+        #      default: kinetic/source-build.yaml
 jenkins_url: http://ivfarm-master.3me.tudelft.nl
 notification_emails:
 - r.m.ensing@tudelft.nl
 prerequisites:
   debian_repositories:
-  - http://repositories.ros.org/ubuntu/building
+  - http://repositories.ros.org/ubuntu/main
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -69,8 +72,8 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
 status_page_repositories:
   default:
-    - http://ivfarm-master.3me.tudelft.nl/ubuntu/building
-    - http://ivfarm-master.3me.tudelft.nl/ubuntu/testing
-    - http://ivfarm-master.3me.tudelft.nl/ubuntu/main
+    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/building
+    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
+    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/main
 type: buildfarm
 version: 1

@@ -7,8 +7,9 @@ jenkins_binary_job_timeout: 600
 jenkins_source_job_priority: 79
 jenkins_source_job_timeout: 30
 notifications:
+  committers: false
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - r.m.ensing@tudelft.nl
   maintainers: false
 package_blacklist:
   - ardrone_autonomy
