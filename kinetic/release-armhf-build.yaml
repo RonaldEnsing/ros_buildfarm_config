@@ -18,6 +18,8 @@ package_blacklist:
   - ueye
 sync:
   package_count: 1
+package_whitelist:
+  - roscpp_core
 repositories:
   keys:
   - |
