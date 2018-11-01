@@ -1,7 +1,7 @@
 %YAML 1.1
 # ROS buildfarm doc-build file
 ---
-canonical_base_url: http://ivfarm-repo.3me.tudelft.nl:80
+canonical_base_url: http://ivfarm-repo.3me.tudelft.nl:80/docs
 documentation_type: rosdoc_lite
 jenkins_job_priority: 89
 jenkins_job_timeout: 120
