@@ -13,7 +13,6 @@ repository_whitelist:
   - roscpp_core
 repositories:
   urls:
-  - http://repositories.ros.org/ubuntu/testing
   - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
   keys:
   - |
