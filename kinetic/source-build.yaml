@@ -14,7 +14,6 @@ repository_whitelist:
 repositories:
   urls:
   - http://repositories.ros.org/ubuntu/testing
-  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
   keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -46,58 +45,6 @@ repositories:
     sB+hFpryAJ4puo6cMZxa6wITHFAM/k84+aRijwCeItuWpUngP25xDuDGMsKarcNi
     qYE=
     =Vgio
-    -----END PGP PUBLIC KEY BLOCK-----
-  - |
-    -----BEGIN PGP PUBLIC KEY BLOCK-----
-    Version: GnuPG v1
-
-    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
-    Wjqv9h92lWexDFnYBg2OvZtPJx61vU4blJMOLbo=
-    =hucd
     -----END PGP PUBLIC KEY BLOCK-----
 skip_ignored_repositories: true
 targets:
