@@ -7,10 +7,10 @@ distributions:
       default: kinetic/doc-build.yaml
     notification_emails:
     - r.m.ensing@tudelft.nl
-    release_builds: {}
-    #      default: kinetic/release-build.yaml
-    source_builds: {}
-    #      default: kinetic/source-build.yaml
+    release_builds:
+      default: kinetic/release-build.yaml
+    source_builds:
+      default: kinetic/source-build.yaml
 jenkins_url: http://ivfarm-master.3me.tudelft.nl:80
 notification_emails:
 - r.m.ensing@tudelft.nl
