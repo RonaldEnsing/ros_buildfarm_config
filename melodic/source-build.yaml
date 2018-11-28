@@ -1,10 +1,9 @@
 %YAML 1.1
-# ROS buildfarm doc-build file
+# ROS buildfarm source-build file
 ---
-canonical_base_url: http://ivfarm-repo.3me.tudelft.nl:80/docs
-documentation_type: rosdoc_lite
-jenkins_job_priority: 89
+jenkins_commit_job_priority: 69
 jenkins_job_timeout: 120
+jenkins_pull_request_job_priority: 59
 notifications:
   committers: false
   emails:
@@ -13,8 +12,11 @@ notifications:
 repository_whitelist:
   - roscpp_core
 repositories:
+  urls:
+  - http://repositories.ros.org/ubuntu/testing
   keys:
   - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v1.4.11 (GNU/Linux)
 
     mQGiBEsy5KkRBADJbDSISoamRM5AA20bfAeBuhhaI+VaiCVcxw90sq9AI5lIc42F
@@ -44,16 +46,14 @@ repositories:
     qYE=
     =Vgio
     -----END PGP PUBLIC KEY BLOCK-----
-  urls:
-  - http://repositories.ros.org/ubuntu/main
+skip_ignored_repositories: true
 targets:
   ubuntu:
-    xenial:
+    melodic:
       amd64:
-type: doc-build
-skip_ignored_packages: true
-upload_credential_id: 842a4e10-95b9-4761-a2f6-44a13e21434e
-upload_host: repo
-upload_root: /var/repos/docs
-upload_user: jenkins-agent
+test_commits:
+  default: true
+test_pull_requests:
+  default: false
+type: source-build
 version: 2
