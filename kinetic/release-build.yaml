@@ -1,35 +1,23 @@
 %YAML 1.1
-# ROS buildfarm index file
+# ROS buildfarm release-build file
 ---
-distributions:
-  kinetic:
-    doc_builds:
-      default: kinetic/doc-build.yaml
-    notification_emails:
-    - r.m.ensing@tudelft.nl
-    release_builds:
-      default: kinetic/release-build.yaml
-    source_builds:
-      default: kinetic/source-build.yaml
-  melodic:
-    doc_builds:
-      default: melodic/doc-build.yaml
-    notification_emails:
-    - r.m.ensing@tudelft.nl
-    release_builds:
-      default: melodic/release-build.yaml
-    source_builds:
-      default: melodic/source-build.yaml
-jenkins_url: http://ivfarm-master.3me.tudelft.nl:80
-notification_emails:
-- r.m.ensing@tudelft.nl
-prerequisites:
-  debian_repositories:
-  - http://repositories.ros.org/ubuntu/main
-  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/main
-  debian_repository_keys:
+abi_incompatibility_assumed: true
+jenkins_binary_job_priority: 82
+jenkins_binary_job_timeout: 120
+jenkins_source_job_priority: 79
+jenkins_source_job_timeout: 30
+notifications:
+  committers: false
+  emails:
+  - r.m.ensing@tudelft.nl
+  maintainers: false
+sync:
+  package_count: 1
+package_whitelist:
+    - roscpp_core
+repositories:
+  keys:
   - |
-    -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v1.4.11 (GNU/Linux)
 
     mQGiBEsy5KkRBADJbDSISoamRM5AA20bfAeBuhhaI+VaiCVcxw90sq9AI5lIc42F
@@ -111,11 +99,15 @@ prerequisites:
     Wjqv9h92lWexDFnYBg2OvZtPJx61vU4blJMOLbo=
     =hucd
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
-status_page_repositories:
-  default:
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/building
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/main
-type: buildfarm
-version: 1
+  urls:
+  - http://repositories.ros.org/ubuntu/building
+  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/building
+skip_ignored_packages: true
+target_repository: http://ivfarm-repo.3me.tudelft.nl:80/ubuntu/building
+targets:
+  ubuntu:
+    xenial:
+      amd64:
+type: release-build
+upload_credential_id: 842a4e10-95b9-4761-a2f6-44a13e21434e
+version: 2

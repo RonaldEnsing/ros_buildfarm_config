@@ -1,33 +1,21 @@
 %YAML 1.1
-# ROS buildfarm index file
+# ROS buildfarm source-build file
 ---
-distributions:
-  kinetic:
-    doc_builds:
-      default: kinetic/doc-build.yaml
-    notification_emails:
-    - r.m.ensing@tudelft.nl
-    release_builds:
-      default: kinetic/release-build.yaml
-    source_builds:
-      default: kinetic/source-build.yaml
-  melodic:
-    doc_builds:
-      default: melodic/doc-build.yaml
-    notification_emails:
-    - r.m.ensing@tudelft.nl
-    release_builds:
-      default: melodic/release-build.yaml
-    source_builds:
-      default: melodic/source-build.yaml
-jenkins_url: http://ivfarm-master.3me.tudelft.nl:80
-notification_emails:
-- r.m.ensing@tudelft.nl
-prerequisites:
-  debian_repositories:
-  - http://repositories.ros.org/ubuntu/main
-  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/main
-  debian_repository_keys:
+jenkins_commit_job_priority: 69
+jenkins_job_timeout: 120
+jenkins_pull_request_job_priority: 59
+notifications:
+  committers: false
+  emails:
+  - r.m.ensing@tudelft.nl
+  maintainers: false
+repository_whitelist:
+  - roscpp_core
+repositories:
+  urls:
+  - http://repositories.ros.org/ubuntu/testing
+  - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
+  keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v1.4.11 (GNU/Linux)
@@ -111,11 +99,14 @@ prerequisites:
     Wjqv9h92lWexDFnYBg2OvZtPJx61vU4blJMOLbo=
     =hucd
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
-status_page_repositories:
-  default:
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/building
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/testing
-    - http://ivfarm-repo.3me.tudelft.nl/ubuntu/main
-type: buildfarm
-version: 1
+skip_ignored_repositories: true
+targets:
+  ubuntu:
+    xenial:
+      amd64:
+test_commits:
+  default: true
+test_pull_requests:
+  default: false
+type: source-build
+version: 2
