@@ -18,6 +18,7 @@ package_whitelist:
 repositories:
   keys:
   - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
     Version: GnuPG v1.4.11 (GNU/Linux)
 
     mQGiBEsy5KkRBADJbDSISoamRM5AA20bfAeBuhhaI+VaiCVcxw90sq9AI5lIc42F
