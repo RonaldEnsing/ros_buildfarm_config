@@ -107,7 +107,7 @@ skip_ignored_packages: true
 target_repository: http://ivfarm-repo.3me.tudelft.nl:80/ubuntu/building
 targets:
   ubuntu:
-    melodic:
+    bionic:
       amd64:
 type: release-build
 upload_credential_id: 842a4e10-95b9-4761-a2f6-44a13e21434e

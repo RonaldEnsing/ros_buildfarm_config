@@ -102,7 +102,7 @@ repositories:
 skip_ignored_repositories: true
 targets:
   ubuntu:
-    melodic:
+    bionic:
       amd64:
 test_commits:
   default: true
