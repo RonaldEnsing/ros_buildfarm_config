@@ -111,7 +111,7 @@ prerequisites:
     Wjqv9h92lWexDFnYBg2OvZtPJx61vU4blJMOLbo=
     =hucd
     -----END PGP PUBLIC KEY BLOCK-----
-rosdistro_index_url: https://gitlab.tudelft.nl/intelligent-vehicles/rosdistro/raw/master/index.yaml
+rosdistro_index_url: https://github.com/RonaldEnsing/rosdistro.git
 status_page_repositories:
   default:
     - http://ivfarm-repo.3me.tudelft.nl/ubuntu/building
