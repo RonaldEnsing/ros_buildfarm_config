@@ -20,6 +20,7 @@ distributions:
       default: melodic/release-build.yaml
     source_builds:
       default: melodic/source-build.yaml
+git_ssh_credential_id: ed075e1f-4917-402a-aca2-ea107e3abed1
 jenkins_url: http://ivfarm-master.3me.tudelft.nl:80
 notification_emails:
 - r.m.ensing@tudelft.nl
