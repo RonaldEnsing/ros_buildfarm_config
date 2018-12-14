@@ -14,7 +14,8 @@ notifications:
 sync:
   package_count: 1
 package_whitelist:
-    - roscpp_core
+  - roscpp_core
+  - prius_description
 repositories:
   keys:
   - |

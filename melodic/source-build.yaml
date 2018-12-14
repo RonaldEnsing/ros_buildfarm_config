@@ -11,6 +11,7 @@ notifications:
   maintainers: false
 repository_whitelist:
   - roscpp_core
+  - prius_description
 repositories:
   urls:
   - http://repositories.ros.org/ubuntu/testing
