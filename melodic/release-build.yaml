@@ -13,15 +13,6 @@ notifications:
   maintainers: false
 sync:
   package_count: 1
-package_whitelist:
-  - actionlib
-  - cpp_common
-  - roscpp_core
-  - roscpp_serialization
-  - roscpp_traits
-  - rostime
-  - prius_description
-  - simple_message
 repositories:
   keys:
   - |
