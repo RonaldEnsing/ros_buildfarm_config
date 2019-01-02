@@ -20,6 +20,7 @@ package_whitelist:
   - roscpp_serialization
   - roscpp_traits
   - rostime
+  - prius_description
 repositories:
   keys:
   - |
