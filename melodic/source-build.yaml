@@ -17,7 +17,6 @@ repository_whitelist:
   - roscpp_traits
   - rostime
   - prius_description
-  - simple_message
 repositories:
   urls:
   - http://repositories.ros.org/ubuntu/testing

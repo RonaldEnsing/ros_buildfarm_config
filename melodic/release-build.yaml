@@ -21,7 +21,6 @@ package_whitelist:
   - roscpp_traits
   - rostime
   - prius_description
-  - simple_message
 repositories:
   keys:
   - |
