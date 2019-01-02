@@ -21,6 +21,7 @@ package_whitelist:
   - roscpp_traits
   - rostime
   - prius_description
+  - urdf
 repositories:
   keys:
   - |
