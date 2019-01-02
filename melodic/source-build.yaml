@@ -10,12 +10,7 @@ notifications:
   - r.m.ensing@tudelft.nl
   maintainers: false
 repository_whitelist:
-  - actionlib
-  - cpp_common
   - roscpp_core
-  - roscpp_serialization
-  - roscpp_traits
-  - rostime
   - prius_description
 repositories:
   urls:
