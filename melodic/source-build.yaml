@@ -10,7 +10,6 @@ notifications:
   - r.m.ensing@tudelft.nl
   maintainers: false
 repository_whitelist:
-  - catkin
   - roscpp_core
   - prius_description
 repositories:
