@@ -14,7 +14,25 @@ notifications:
 sync:
   package_count: 1
 package_whitelist:
+  - cpp_common
+  - rostime
   - roscpp_core
+  - roscpp_traits
+  - roscpp_serialization
+  - catkin
+  - genmsg
+  - genpy
+  - message_runtime
+  - gencpp
+  - geneus
+  - gennodejs
+  - genlisp
+  - message_generation
+  - rosbuild
+  - rosconsole
+  - std_msgs
+  - rosgraph_msgs
+  - xmlrpcpp
 repositories:
   keys:
   - |

@@ -10,7 +10,25 @@ notifications:
   - r.m.ensing@tudelft.nl
   maintainers: false
 repository_whitelist:
+  - cpp_common
+  - rostime
   - roscpp_core
+  - roscpp_traits
+  - roscpp_serialization
+  - catkin
+  - genmsg
+  - genpy
+  - message_runtime
+  - gencpp
+  - geneus
+  - gennodejs
+  - genlisp
+  - message_generation
+  - rosbuild
+  - rosconsole
+  - std_msgs
+  - rosgraph_msgs
+  - xmlrpcpp
 repositories:
   urls:
   - http://repositories.ros.org/ubuntu/testing
