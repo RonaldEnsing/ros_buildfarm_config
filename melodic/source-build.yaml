@@ -9,8 +9,6 @@ notifications:
   emails:
   - r.m.ensing@tudelft.nl
   maintainers: false
-repository_whitelist:
-  - roscpp_core
 repositories:
   urls:
   - http://repositories.ros.org/ubuntu/testing
