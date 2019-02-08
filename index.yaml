@@ -2,6 +2,11 @@
 # ROS buildfarm index file
 ---
 distributions:
+  kinetic:
+    notification_emails:
+    - r.m.ensing@tudelft.nl
+    release_builds:
+      default: kinetic/release-build.yaml
   melodic:
     doc_builds:
       default: melodic/doc-build.yaml
