@@ -7,6 +7,8 @@ distributions:
     - r.m.ensing@tudelft.nl
     release_builds:
       default: kinetic/release-build.yaml
+    source_builds:
+      default: kinetic/source-build.yaml
   melodic:
     doc_builds:
       default: melodic/doc-build.yaml
