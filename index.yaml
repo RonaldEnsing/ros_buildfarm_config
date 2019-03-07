@@ -2,15 +2,15 @@
 # ROS buildfarm index file
 ---
 distributions:
-  priusiv:
+  melodic:
     doc_builds:
-      default: priusiv/doc-build.yaml
+      default: melodic/doc-build.yaml
     notification_emails:
     - r.m.ensing@tudelft.nl
     release_builds:
-      default: priusiv/release-build.yaml
+      default: melodic/release-build.yaml
     source_builds:
-      default: priusiv/source-build.yaml
+      default: melodic/source-build.yaml
 git_ssh_credential_id: ed075e1f-4917-402a-aca2-ea107e3abed1
 jenkins_url: http://ivfarm-master.3me.tudelft.nl:80
 notification_emails:
